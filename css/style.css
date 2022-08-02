@@ -156,3 +156,46 @@ input[type=submit] {
 .ativa{
     margin-left:0%;
 }
+
+
+.dark-mode {
+    background-color: #f0dfff;
+    color: #000000;
+}
+
+.dark-mode .contato {
+    background-color: #e4c5ff;
+}
+
+.dark-mode #sobreMim {
+    color: #ffffff;
+}
+
+.dark-mode #contato form input[type=text], .dark-mode textarea {
+    border: none;
+    border-bottom: 1px solid #21003f;
+    background-color:#f0dfff;
+    color: #21003f;
+}
+
+.dark-mode a {
+    color: #21003f;
+}
+
+.dark-mode #sobreMim a {
+    color: #ffffff;
+}
+
+.dark-mode input[type=submit] {
+    background-color: #ffffff;
+    color: #21003f;
+}
+
+.dark-mode footer {
+    color: #2c0055;
+}
+
+#darkModeBtn {
+    background-color: transparent;
+    border: none;
+}

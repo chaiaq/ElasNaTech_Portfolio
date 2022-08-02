@@ -53,3 +53,10 @@ function validaForm () {
     alert("Preencha todos os campos do formulário, por favor")
   }
 }
+
+/* script modo escuro */
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
