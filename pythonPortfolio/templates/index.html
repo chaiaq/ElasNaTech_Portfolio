@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaiane Quadrado | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="static/js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                |
+                <li><a href="#conhecimentos">CONHECIMENTOS</a></li>
+                |
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="links">
+        <ul>
+            <li><a href="#"><img src="static/img/top-up.png"></a></li>
+            <hr>
+            <li><button id="darkModeBtn" onclick="darkMode()"><img src="static/img/dark-mode.png"></button></li>
+            <hr>
+            <li><a href="https://github.com/nidril" target="_blank"><img src="static/img/github.png"></a></li>
+            <hr>
+            <li><a href="https://linkedin.com/in/chaianeaq" target="_blank"><img src="static/img/linkedin.png"></a></li>
+        </ul>
+    </div>
+
+    <section id="sobreMim">
+        <div class="perfil">
+            <h1>Chaiane Quadrado</h1>
+            <p>Técnica em Comunicação Visual, curiosa na área de programação desde 2000 e blogs com glitter e template de anime. Estudando para me inserir no mercado de trabalho.</p>
+            <p>Atualmente faço parte do <b><a href="https://jabrasil.org.br/institutoccr-elasnatech" target="_blank">elasNaTech();</a></b> um programa focado na formação de mulheres na área de tecnologia, uma iniciativa da JA Brasil junto do Grupo CCR.</p>
+            <h3>--------- ÁREA DE TESTE ---------</h3>
+            <a href="contato">Contato</a>
+        </div>
+    </section>
+
+    <br class="clearfix">
+
+    <section id="conhecimentos">
+        <h2>Conhecimentos</h2>
+        <div class="duasPartes">
+            <p>Até o momento minha maior experiência é na área de desenvolvimento web, utilizando <b>HTML5</b> e <b>CSS</b> e estou aprendendo mais sobre JavaScript e como adicionar interações ao site.</p>
+            <p>Fiz alguns cursos de lógica de programação e algoritmo, bem como desafios de desenvolvimento utilizando Portugol.</p>
+        </div>
+        <div class="duasPartes">
+            <div id="container">
+                <img src="static/img/arquivo-html.png" class="ativa">
+                <img src="static/img/arquivo-css.png">
+                <img src="static/img/arquivo-js.png">
+            </div>
+        </div> 
+    </section>
+
+    <br class="clearfix">
+ 
+    
+    <section class="contato">
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="duasPartes">
+                <h2>chaiane.ey@gmail.com</h2>
+                <b>linkedin:</b> <a href="https://linkedin.com/in/chaianeaq" target="_blank">/chaianeaq</a>
+                <br>
+                <b>github:</b> <a href="https://github.com/nidril" target="_blank">/nidril</a>
+                <br>
+                <b>instagram:</b><a href="https://www.instagram.com/chai.aq/">@chai.aq</a>
+            </div>
+
+            <div class="duasPartes">
+                <h3>Envie uma mensagem:</h3>
+                <form name="formulario" enctype="application/x-www-form-urlencoded" method="post">
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text" name="name" value="" placeholder="Digite seu nome">
+                    <br>
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="text" name="email" value="" placeholder="Digite seu email">
+                    <br>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" name="msg"></textarea>
+                    <br>
+                    <input id="enviar" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <br class="clearfix">
+
+    <footer>
+        Site desenvolvido por Chaiane Quadrado para o projeto <b>elasNaTech();</b> | 2022
+    </footer>
+
+    
+</body>
+</html>

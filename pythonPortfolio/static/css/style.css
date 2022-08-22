@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.clearfix {
+    clear:both;
+}
+
+body {
+    background-color: #2c0055;
+    color: #e4e4e4;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+nav {
+    margin: 10px 0 0 40px;
+    line-height: 3.0;
+    font-weight: 700;
+}
+
+nav li {
+    display: inline;
+}
+
+#sobreMim {
+    margin: 40px 0 40px 0;
+    background-image: url(../img/background.jpg);
+    background-position: left;
+    background-color: #2c0055;
+    height: 360px;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.perfil {
+    padding: 50px 50px 50px 80px;
+    width: 50%;
+    float: left;
+    line-height: 150%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2c0055;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+}
+
+.links {
+    width: 50px;
+    position: fixed;
+    bottom: 50%;
+    right: auto;
+}
+
+.links img {
+    width: 25px;
+}
+
+.contato {
+    padding: 10px;
+    background-color: #21003f;
+    height: 350px;
+    margin-top: 60px;
+}
+
+#contato {
+    margin-top: 40px;
+    margin-left: 80px;
+    padding-right: 40px;
+}
+
+#conhecimentos {
+    margin-top: 40px;
+    margin-left: 80px;
+    padding-right: 40px;
+}
+
+.duasPartes {
+    width: 45%;
+    float: left;
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+    font-size: small;
+    color: #afafaf;
+}
+
+#contato form {
+    line-height: 150%;
+}
+
+#contato form input[type=text], textarea {
+    border: none;
+    border-bottom: 1px solid #afafaf;
+    width: 40%;
+    background-color: #2c0055;
+    color: #afafaf;
+}
+
+#contato textarea {
+    min-height: 50px;
+}
+
+#contato label {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[type=submit] {
+    border: none;
+    width: 70%;
+    background-color: #7010c9;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#container img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-left:100%;
+
+    -webkit-transition: margin-left 500ms ease-in;
+    -moz-transition: margin-left 500ms ease-in;
+    -o-transition: margin-left 500ms ease-in;
+    transition: margin-left 500ms ease-in;
+}
+
+#container {
+    overflow:hidden;
+    position: relative;
+    width:150px;
+    height:150px;
+}
+.ativa{
+    margin-left:0%;
+}
+
+
+.dark-mode {
+    background-color: #f0dfff;
+    color: #000000;
+}
+
+.dark-mode .contato {
+    background-color: #e4c5ff;
+}
+
+.dark-mode #sobreMim {
+    color: #ffffff;
+}
+
+.dark-mode #contato form input[type=text], .dark-mode textarea {
+    border: none;
+    border-bottom: 1px solid #21003f;
+    background-color:#f0dfff;
+    color: #21003f;
+}
+
+.dark-mode a {
+    color: #21003f;
+}
+
+.dark-mode #sobreMim a {
+    color: #ffffff;
+}
+
+.dark-mode input[type=submit] {
+    background-color: #ffffff;
+    color: #21003f;
+}
+
+.dark-mode footer {
+    color: #2c0055;
+}
+
+#darkModeBtn {
+    background-color: transparent;
+    border: none;
+}
