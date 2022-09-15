@@ -1,15 +1,15 @@
-/* script galeria de imagens */
+/* script galeria de certificados */
 
-let imagenss= document.querySelectorAll('.img');
+let certs= document.querySelectorAll('.img');
 let modal = document.querySelector('.modal');
 let modalImg = document.querySelector('#modal_img');
 let btClose = document.querySelector('#bt_close');
 let srcVal="";
 
-for(let i =0; i<imagenss.length;i++){
-    imagenss[i].addEventListener('click',function(){
+for(let i =0; i<certs.length;i++){
+  certs[i].addEventListener('click',function(){
         
-        srcVal = imagenss[i].getAttribute('src');
+        srcVal = certs[i].getAttribute('src');
         modalImg.setAttribute('src', srcVal);
         modal.classList.toggle('modal_active');
     });
