@@ -1,25 +1,25 @@
-/* script galeria de certificados */
 
-let certs= document.querySelectorAll('.img');
-let modal = document.querySelector('.modal');
-let modalImg = document.querySelector('#modal_img');
-let btClose = document.querySelector('#bt_close');
-let srcVal="";
+/* script para formulario */
 
-for(let i =0; i<certs.length;i++){
-  certs[i].addEventListener('click',function(){
-        
-        srcVal = certs[i].getAttribute('src');
-        modalImg.setAttribute('src', srcVal);
-        modal.classList.toggle('modal_active');
-    });
-    
+document.getElementById("enviar").addEventListener("click", validaForm)
+
+function validaForm () {
+  var name = document.getElementById("name").value
+  var email = document.getElementById("email").value
+  var msg = document.getElementById("msg").value
+  if (name != "" && email != "" && msg != "") {
+    alert("Obrigada, assim que possível retorno seu contato!")
+  } else {
+    alert("Preencha todos os campos do formulário, por favor ;)")
+  }
 }
 
+/* script modo escuro */
 
-btClose.addEventListener('click', function(){
-    modal.classList.toggle('modal_active');
-});
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 
 /* script para galeria linguagens*/
 
@@ -61,25 +61,3 @@ function resetarImagens(){
 }
 
 var intervalo = setInterval(avancarImagem,2000);
-
-/* script para formulario */
-
-document.getElementById("enviar").addEventListener("click", validaForm)
-
-function validaForm () {
-  var name = document.getElementById("name").value
-  var email = document.getElementById("email").value
-  var msg = document.getElementById("msg").value
-  if (name != "" && email != "" && msg != "") {
-    alert("Obrigada, assim que possível retorno seu contato!")
-  } else {
-    alert("Preencha todos os campos do formulário, por favor ;)")
-  }
-}
-
-/* script modo escuro */
-
-function darkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}

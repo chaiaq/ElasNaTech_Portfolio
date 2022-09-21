@@ -275,7 +275,7 @@ div section {
 }
 
 #modal_img {
-    width: 50%;
+    width: 100%;
     transform: scale(0);
     transition: all linear .3s;
 }
